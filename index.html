@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Slack API guide </title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/osu.png" type="image/x-icon" />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel='stylesheet' type='text/css'>
+    <link href="css/slack.css" rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <div class="slack-top-menu" id="home">
+        <div class="container">
+            <div class="navbar navbar-default" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="#" class="navbar-brand"><img src="images/slack.png" alt="Slack API" title="Slack API" /></a>
+                    </div>
+                    <div class="navbar-collapse collapse" id="slack-nav-bar">
+                        <ul class="nav navbar-nav navbar-right" style="margin-top: 20px;">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#slack-overview">Overview</a></li>
+                            <li><a href="#slack-getstarted">Get Started</a></li>
+                            <li><a href="#slack-tutorial">Project</a></li>
+                            <li><a href="#slack-deploy">Deployment</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" id="back-to-top" title="Back to top">&uarr;</a>
+    </div>
+    <div class="slack-welcome" id="slack-welcome">
+        <div class="container">
+            <div class="slack-slogan">
+                <span class="txt_white">Welcome to Slack API (Slack Bot)<img src="images/bot.png"></span>
+                <p class="txt_slogan"><i>Building/Automating task with Bots</i></p>
+            </div>
+        </div>
+    </div>
+    <div id="slack-overview" class="slack-overview">
+        <div class="container">
+            <div class="row">
+                <div class="slack-line-header">
+                    <div class="text-center">
+                        <span class="text-header">Overview</span>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="row">
+                <div class="row-content">
+                    <p>
+                        Slack, a cloud based team collaborations tool is no longer news to several people and teams all over the world. Since its launch in August 2013, several companies embraced Slack because of the ease with which it helps their team members to collaborate on projects both on site and offsite(remote). Much more than that, slack has several integrations that could make teams work smart with its bots integration. This simple means that you could use the bot to do whatever you want to do or use it to enhance tasks.</p>
+                    <br/>
+                    <h4>What is a bot?</h4>
+                    <p>
+                        In simple terms, a Bot is software that is designed to automate different types of task that we would have to do in our day to day activities.</p>
+                    <p>
+                        Despite the fact that bots helps us to do several things at a time that we would have been able to do ourself, it could means different things to different people. E.g Gamers understand bots as AI characters in a game, spam messages for cyber criminals/web attackers, team collaboration for project manages, assistants to several customer service agents etc. </p>
+                    <p>
+                        Of a truth, Bots are now an essential part of our lives as they make life easy for people generally.</p>
+                    <br/>
+                    <h4>What can I do with bots?</h4>
+                    <p>
+                        There is no doubt bots can do limitless tasks and automations. Out this numerous things that bots can do, here are a few, grouped by types:
+                        <br/>
+                        <ul>
+                            <li>Integration with other services.</li>
+                            <li>Meeting Scheduler and reminder</li>
+                            <li>Games</li>
+                            <li>Customized notifications</li>
+                            <li>Social services</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="slack-getstarted" class="slack-getstarted">
+        <div class="container">
+            <div class="row">
+                <div class="slack-line-header">
+                    <div class="text-center">
+                        <span class="text-header">Getting Started</span>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="row">
+                <div class="row-content">
+                    <p>
+                        To get started with simple custom Slack bot or a more complex bot that integrate with other services and put together those informations in a specified channel on slack, customized notifications, social services and meeting scheduler etc, which allows you to receive events in real time and send messages to channels, private groups and users.
+                    </p>
+                    <p>Here are the basic steps that you need to follow:</p>
+                    <h4>1. Create a slack team if you don’t have one or belong to an organization</h4>
+                    <p>
+                        Creating a slack team is simple — go to the <a href="//slack.com/get-started#create">slack create team page</a>, enter your email and follow the instructions. </p>
+                    <div class="tutorial-image"> <img class="img-responsive" src="images/slack1.png" /></div>
+                    <p>This will take you to a page where you have to confirm your email address. Once your team is created, let’s jump to the next step.
+                    </p>
+                    <b>Note:</b> If you do have a team already, make sure you are logged in and jump to the next step.
+                    <br/>
+                    <br/>
+                    <h4>2. Create a Hubot Slack Token</h4>
+                    <p>Generally, because slack bots don’t have password, you will have to create or generate a token for the bot. </p>
+                    <p>To get this done, on the slack window, <i>click on the team name and click Apps and Custom Integrations.</i>
+                    </p>
+                    <div class="tutorial-image"><img class="img-responsive" src="images/slack3.png" />.</div>
+                    After this, click on apps and integration.
+                    <p>This will take you to slack apps page. On this page, click on bots under categories. Search for hubots and click on it. This will further take you to a Hubot page</p>
+                    <div class="tutorial-image"> <img class="img-responsive" src="images/slack4.png" /></div>
+                    <p>click install and follow the next instructions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="slack-tutorial" class="slack-tutorial">
+        <div class="container">
+            <div class="row">
+                <div class="slack-line-header">
+                    <div class="text-center">
+                        <span class="text-header">Setting up the project</span>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="row">
+                <div class="row-content">
+                    <h4>Sample Hubot project:</h4>
+                    <p>
+                        To create a hubot project, Yeoman is one of the best tools for getting started on your first Hubot. To install Yeoman, run <pre class="small-space">npm install -g yo generator-hubot</pre> This will install the Yeoman Hubot generator. After this, you can then create a new Hubot project using the generator. In this case, let’s call it notifier by running
+                        <pre class="small-space">mkdir notifier && cd $_ <br/>yo hubot --adapter=slack</pre></p>
+                    <p> This script will prompt you enter values for certain attribute of the app we are building, and create a package.json file with which npm needs to help manage your project.
+                    </p>
+                    <p>
+                        Now you got the bot(notifier) token generated and also a scaffolded hubot project, let run the project with the token generated <pre>HUBOT_SLACK_TOKEN=xoxb-184645738727-rxUvH3FSI1SW7XuKRwRrK8lT ./bin/hubot --adapter slack </pre>This will immediately activate the notifier bot created and could see that the bot is now active on slack
+                    </p>
+                    <h4>Basic bot commands and usage</h4>
+                    <p>
+                        First and foremost, create a file in the script folder and name it sample.js or sample.coffee if you want to use coffeescript. Bots generally can be programmed to listen to conversations. This liStening can either be as a direct message or in a conversation.</p>
+                    <p>
+                        In direct message, use .respond
+                        <pre><br/>'use strict'; <br/> module.exports = function(bot) { <br/>   bot.respond(/hola/i, function(res) { <br/>     return res.reply('Hola, que tal?'); <br/>   }); <br/> };<br/></pre> This will respond to direct messages to the bot alone
+                        <h4>Listening in any conversation - .hear</h4>
+                        <pre><br/>bot.hear(/\bbot\b/, function(res) { <br/>   return res.reply('I\'m sleeping'); <br/>});
+                        </pre>
+                    </p>
+                    <h4>Bots can talk.</h4>
+                    <p>I mean it sounds funny, but bots can talk. They respond to the listened conversations whenever the conversation concerns them by either send or reply. In the previous examples, we have been using reply. This will talk back to the user that is engaging the bot in the channel.</p>
+                    <pre><br/>bot.hear(/\bhappy\b/, function(res) {<br/>   return res.send('Yes :)');<br/>});
+                    </pre>
+                    <p>The bot have brain which is used to store information via the a persistence(Redis) memory.</p>
+                    <p>
+                        Note If Redis is not running, the bot will still function, but all data is lost next time the bot restarts.
+                        <pre><br/>bot.hear(/\bcount\b/, function(res) {<br/>   robot.brain.set('countValue', (robot.brain.get(countValue) || 0) + 1);<br/>   return res.send(robot.brain.get(countValue));<br/>});
+                        </pre>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="slack-deploy" class="slack-deploy">
+        <div class="container">
+            <div class="row">
+                <div class="slack-line-header">
+                    <div class="text-center">
+                        <span class="text-header">Deploying to Heroku</span>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="row">
+                <div class="row-content">
+                    <p>
+                        <a href="//www.heroku.com/what">Heroku</a> is a cloud platform that lets companies build, deliver, monitor and scale apps.<br/>
+                        With Heroku you can easily deploy your app with few clicks or few commands.
+                    </p>
+                    <p>Here are few steps to deploying our newly created hubot</p>
+                    <ul>
+                        <li><a href="//signup.heroku.com/">Create an account </a></li>
+                        <li>Download the heroku <a href="//devcenter.heroku.com/articles/heroku-cli">toolbelt</a> and install, </li>
+                        <li>On Your  terminal, Create the application by running e.g <pre>heroku create notifierbot</pre> </li>
+                        <li>Add the files with by running <pre>git add .</pre></li>
+                        <li> Commit the files <pre>git commit -am "intial commit"</pre></li>
+                        <li> Push to heroku <pre>git push heroku master</pre></li>
+                        <li> Add the add-ons <pre>heroku config:set HUBOT_SLACK_TOKEN=xoxb-184645738727-rxUvH3FSI1SW7XuKRwRrK8lT</pre></li>
+                        <li>Keep the bot awake <pre>heroku config:set HUBOT_HEROKU_KEEPALIVE_URL=https://gmt-bot.herokuapp.com --app gmt-bot</pre></li>
+                    </ul>
+                    Note: Yoeman should create a Procfile in the application root folder, but you can't find there, add a script to run the app in the package.json such as 
+                    <pre>"scripts":{<br/>  "start": "bin/hubot -a slack"<br/>}</pre>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/slack.js" type="text/javascript"></script>
+</body>
+
+</html>

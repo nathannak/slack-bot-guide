@@ -1,0 +1,266 @@
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'LatoBlack';
+  src: url('../fonts/Lato-Black.ttf');
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Lato", Arial, Helvetice Neue, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-style: normal;
+  /*line-height: 1.6;*/
+  line-height: 1.5rem;
+  -webkit-font-smoothing: antialiased;
+  /* Fix for webkit rendering */
+  -webkit-text-size-adjust: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'LatoBlack', Arial, Helvetice Neue, sans-serif;
+}
+
+span,
+p {
+  font-family: 'Lato', Arial, Helvetice Neue, sans-serif;
+  margin: 10px auto;
+}
+
+* {
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+}
+
+.slack_clear {
+  clear: both;
+}
+
+.height30 {
+  height: 30px;
+}
+
+.slack-top-bar {
+  min-height: 40px;
+  background-color: #eeeeee;
+}
+
+.slack-top-menu {
+  min-height: 110px;
+  background-color: #ffffff;
+  z-index: 5000;
+  width: 100%;
+}
+
+.slack-top-menu .navbar-toggle {
+  margin-top: 38px;
+}
+
+.slack-top-menu .navbar-brand {
+  padding: 0;
+  margin: 20px 0 0 0;
+}
+
+.navbar-brand img {
+  width: 50px;
+}
+
+.slack-welcome {
+  background: url('../images/slackb.png');
+  padding-top: 100px;
+}
+
+.slack-welcome,
+.slack-getstarted,
+.slack-overview,
+.slack-tutorial,
+.slack-deploy,
+.slack-samplebot {
+  min-height: 350px;
+  margin-bottom: 50px;
+}
+
+.row-content {
+  font-size: 16px;
+  margin: 10px auto;
+  width: 90%;
+  line-height: 1.7;
+}
+
+.txt_white img {
+  width: 50px;
+  margin-top: -10px;
+}
+
+.slack-slogan {
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  font-size: 42px;
+  text-align: center;
+  line-height: 1.2;
+  margin: 60px 0;
+  color: #333333;
+}
+
+.subheader {
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  margin-top: 12px;
+  font-size: 12px;
+  color: #e67e22;
+}
+
+.nav > li > a {
+  padding: 10px 20px;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background: #E51870;
+  color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  background: #EDB423;
+  color: #fff;
+}
+
+.nav > li > a {
+  color: #929292;
+}
+
+.navbar-default {
+  background-color: #fff;
+  border: none;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  background: #E51870;
+  color: #fff;
+}
+
+.navbar {
+  margin-bottom: 0px;
+}
+
+.slack-header-orange {
+  background-color: #ff7600;
+  min-width: 298px;
+  height: 67px;
+  color: #fff;
+}
+
+.hr_gray {
+  border: 1px solid #cccccc;
+}
+
+.slack-line-header {
+  margin: 60px auto;
+}
+
+.text-header {
+  color: #4D6DC3;
+  text-align: center;
+  font-size: 3rem;
+  font-family: LatoBlack;
+  text-transform: capitalize;
+}
+
+.txt_white {
+  color: #fff;
+}
+
+.txt_slogan {
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+}
+
+#back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 9999;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  line-height: 30px;
+  background: #4D6DC3;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: opacity 0.2s ease-out;
+  opacity: 0;
+}
+
+#back-to-top:hover {
+  background: #E51870;
+}
+
+#back-to-top.show {
+  opacity: 1;
+}
+
+.tutorial-image {
+  width: 60%;
+  margin: 30px auto;
+  /*max-height: 200px;*/
+}
+
+@media (min-width:991px) and (max-width:1200px) {
+  .slack-header-orange {
+    min-width: 230px;
+  }
+  .slack-slogan {
+    font-size: 42px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    padding-top: 9px;
+    padding-bottom: 9px;
+  }
+  .slack-slogan {
+    font-size: 35px;
+  }
+}
+@media (max-width: 480px) {
+  .slack-header-orange {
+    min-width: 0px;
+  }
+/*  .txt_white img {
+  width: 20px;
+  margin-top: -10px;
+}*/
+  .slack-slogan {
+    margin-top: 10px;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 380px) {
+  .slack-header-orange {
+    min-width: 0px;
+  }
+}
